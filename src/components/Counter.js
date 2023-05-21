@@ -6,8 +6,8 @@ import { useRef } from "react";
 
 const Counter = () => {
   const dispatch = useDispatch();
-  const counter = useSelector((state) => state.counter);
-  const visible = useSelector((state) => state.visible);
+  const counter = useSelector((state) => state.counter.counter);
+  const visible = useSelector((state) => state.counter.visible);
   const increaseRef = useRef();
 
   const incrementHandler = () => {
